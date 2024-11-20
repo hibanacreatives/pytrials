@@ -42,7 +42,7 @@ def test_full_studies_below():
 
 def test_full_studies_above():
     with raises(ValueError):
-        ct.get_full_studies(search_expr="Coronavirus+COVID", max_studies=2000)
+        ct.get_full_studies(search_expr="Coronavirus+COVID", max_studies=101)
 
 
 def test_study_fields_csv():
