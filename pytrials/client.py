@@ -77,7 +77,7 @@ class ClinicalTrials:
         else:
             raise ValueError("Format argument has to be either 'csv' or 'json")
 
-        if max_studies > 1000 or max_studies < 1:
+        if max_studies > 100 or max_studies < 1:
             raise ValueError("The number of studies can only be between 1 and 1000")
 
         req = f"studies?{format}&markupFormat=legacy&query.term={search_expr}&pageSize={max_studies}"
